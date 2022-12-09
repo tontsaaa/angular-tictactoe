@@ -1,0 +1,19 @@
+#grid-container {
+    height: 80%;
+}
+
+mat-grid-list {
+    height: 500px;
+    width: 500px;;
+}
+
+mat-grid-tile {
+    background: lightslategray;
+  }
+
+button {
+    height: 100%;
+    width: 100%;
+    background: none;
+    border: none;
+}
