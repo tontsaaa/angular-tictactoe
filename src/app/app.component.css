@@ -9,11 +9,24 @@ mat-grid-list {
 
 mat-grid-tile {
     background: lightslategray;
-  }
+}
 
-button {
+.playButton {
+    font-size: large;
     height: 100%;
     width: 100%;
     background: none;
     border: none;
+}
+
+#resetButton {
+    margin: 5px;
+}
+
+#X {
+    background: lightblue;
+}
+
+#O {
+    background: lightcoral;
 }

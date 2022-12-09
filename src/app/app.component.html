@@ -1,41 +1,42 @@
 <div id="grid-container" fxLayout="column" fxLayoutAlign="center center">
   <h1>Tic Tac Toe</h1>
-  <h2>Player 1</h2>
+  <h2>{{message}}</h2>
   <mat-grid-list [cols]="3" rowHeight="fit">
     <mat-grid-tile>
-      <button (click)="onClick()">{{button1}}</button>
+      <button id="{{button0}}" class="playButton" (click)="onClick(0)" [disabled]="gameOver">{{array[0]}}</button>
     </mat-grid-tile>
 
     <mat-grid-tile>
-      <button (click)="onClick()">{{button2}}</button>
+      <button id="{{button1}}" class="playButton" (click)="onClick(1)" [disabled]="gameOver">{{array[1]}}</button>
     </mat-grid-tile>
 
     <mat-grid-tile>
-      <button (click)="onClick()">{{button3}}</button>
+      <button id="{{button2}}" class="playButton" (click)="onClick(2)" [disabled]="gameOver">{{array[2]}}</button>
     </mat-grid-tile>
 
     <mat-grid-tile>
-      <button (click)="onClick()">{{button4}}</button>
+      <button id="{{button3}}" class="playButton" (click)="onClick(3)" [disabled]="gameOver">{{array[3]}}</button>
     </mat-grid-tile>
 
     <mat-grid-tile>
-      <button (click)="onClick()">{{button5}}</button>
+      <button id="{{button4}}" class="playButton" (click)="onClick(4)" [disabled]="gameOver">{{array[4]}}</button>
     </mat-grid-tile>
 
     <mat-grid-tile>
-      <button (click)="onClick()">{{button6}}</button>
+      <button id="{{button5}}" class="playButton" (click)="onClick(5)" [disabled]="gameOver">{{array[5]}}</button>
     </mat-grid-tile>
 
     <mat-grid-tile>
-      <button (click)="onClick()">{{button7}}</button>
+      <button id="{{button6}}" class="playButton" (click)="onClick(6)" [disabled]="gameOver">{{array[6]}}</button>
     </mat-grid-tile>
 
     <mat-grid-tile>
-      <button (click)="onClick()">{{button8}}</button>
+      <button id="{{button7}}" class="playButton" (click)="onClick(7)" [disabled]="gameOver">{{array[7]}}</button>
     </mat-grid-tile>
 
     <mat-grid-tile>
-      <button (click)="onClick()">{{button9}}</button>
+      <button id="{{button8}}" class="playButton" (click)="onClick(8)" [disabled]="gameOver">{{array[8]}}</button>
     </mat-grid-tile>
   </mat-grid-list>
+  <button id="resetButton" (click)="reset()">Reset</button>
 </div>
